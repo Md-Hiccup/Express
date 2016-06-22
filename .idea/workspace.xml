@@ -2,90 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c89529-183c-4c8b-ac93-29b8ad1754a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/.idea/bootstrap-3.3.6-dist.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/.idea/bootstraps.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/blog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/css/site.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/files/button.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/files/text.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/files/try.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/files/try1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/marbles/css/marble.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/marbles/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/marbles/js/hide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/marbles/js/marble.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/marbles/try.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/tictactoe_double_player/css/mine.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/tictactoe_double_player/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/tictactoe_double_player/js/mine.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/tictactoe_single_player/css/tic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/tictactoe_single_player/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/tictactoe_single_player/js/lib.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/games/tictactoe_single_player/js/tic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/imarble.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/female-lion.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/female-white-tiger.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/games.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/google.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/hello-world.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/hicc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/hiccup-dragon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/hiccup.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/hiccuplife.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/imarble.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/king-lion.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/learn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/life.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/marble.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/mine.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/one.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/programmer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/tic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/img/tictac.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/js/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/js/jquery-1.12.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/js/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/js/site.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/mix.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/tictactoe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/tictactoe_double.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/HiccupGames/web.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="$PROJECT_DIR$/npm-debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
     </list>
     <ignored path="express.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -138,12 +55,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/html/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+            <state relative-caret-position="-147">
+              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#40#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,8 +82,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -179,6 +108,7 @@
         <option value="$PROJECT_DIR$/public/html/login.html" />
         <option value="$PROJECT_DIR$/public/html/web.html" />
         <option value="$PROJECT_DIR$/public/html/home.html" />
+        <option value="$PROJECT_DIR$/db.js" />
       </list>
     </option>
   </component>
@@ -191,9 +121,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
     <option name="y" value="25" />
-    <option name="width" value="1280" />
-    <option name="height" value="775" />
+    <option name="width" value="1270" />
+    <option name="height" value="769" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -251,24 +182,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,34 +273,34 @@
       <workItem from="1466571258896" duration="1850000" />
       <workItem from="1466574275783" duration="1035000" />
       <workItem from="1466578116463" duration="3586000" />
-      <workItem from="1466582972267" duration="2034000" />
+      <workItem from="1466582972267" duration="8018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25101000" />
+    <option name="totallyTimeSpent" value="31085000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1280" height="775" extended-state="6" />
+    <frame x="1" y="25" width="1270" height="769" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16441621" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16573259" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30955994" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24205749" sideWeight="0.49722" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24502297" sideWeight="0.49722" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -460,9 +373,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/html/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+        <state relative-caret-position="-147">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
