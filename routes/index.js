@@ -7,6 +7,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 */
-router.sendFile(path.join(__dirname,'views','HiccupGames','index.html'));
+router.get('/' , function (req ,res ,next){
+res.sendFile(path.join(__dirname,'../','public','html','index.html'));
+});
 
 module.exports = router;
