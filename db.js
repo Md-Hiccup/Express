@@ -10,7 +10,7 @@ var user = "create table if not exists user  ( Id INTEGER NOT NULL PRIMARY KEY ,
 var signup = "create table if not exists signup ( Id INTEGER NOT NULL , FirstName TEXT NOT NULL , " +
     "LastName TEXT NOT NULL, Email TEXT NOT NULL , Password TEXT NOT NULL);";
  
-var scoreBoard = "create table if not exists scoreBoard ( Id INTEGER NOT NULL , userName TEXT NOT NULL ," +
+var scoreBoard = "create table if not exists scoreBoard ( Id INTEGER NOT NULL  , UserName TEXT NOT NULL ," +
     " Rank INTEGER ,  Score INTEGER );";
 
 
@@ -34,5 +34,9 @@ db.serialize(function() {
         else 
             console.log("ScoreBoard Table is created");
     });
+
+    db.run("insert into user ( 'UserName' , 'Password') values(?,?)", "hussain@gmail.com" , "dastan");
+    console.log("1 Email Id is Inserted ");
 });
+
 //db.close();

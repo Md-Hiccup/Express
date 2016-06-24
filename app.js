@@ -5,6 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database('hiccup.db');
+
 var routes = require('./routes/index');
 var auth = require('./routes/auth');
 //var users = require('./routes/users');
@@ -15,6 +18,16 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+
+app.get('/home', function(req ,res ){
+  // db.get("Select UserName from user" );
+  console.log(req.body);
+    res.json({'user' : req.params.email , 'pass' : req.params.password}) ;
+});
 
 
 // public static file
@@ -37,9 +50,10 @@ app.use('/auth' , auth);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  var err = new Error('Not Found');         //  res.status(404).send('Sorry can't find that');
   err.status = 404;
   next(err);
+
 });
 
 // error handlers
@@ -59,8 +73,8 @@ if (app.get('env') === 'development') {
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
+  res.status(err.status || 500);              //console.error(err.stack);
+  res.render('error', {                       // res.status(500).send('Something Broke');
     message: err.message,
     error: {}
   });
