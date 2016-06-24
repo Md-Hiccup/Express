@@ -4,14 +4,15 @@
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('hiccup.db');
 
-var user = "create table if not exists user  ( Id INTEGER NOT NULL PRIMARY KEY , UserName TEXT NOT NULL ," +
-    "  Password TEXT NOT NULL );";
+var user = "create table if not exists user  ( Id INTEGER PRIMARY KEY AUTOINCREMENT , Email TEXT NOT NULL ," +
+    "  Password TEXT NOT NULL " +
+    "    FOREIGN KEY( Email , Password) REFERENCES signup( Email , Password));";
 
-var signup = "create table if not exists signup ( Id INTEGER NOT NULL , FirstName TEXT NOT NULL , " +
+var signup = "create table if not exists signup ( Id INTEGER PRIMARY KEY AUTOINCREMENT , FirstName TEXT NOT NULL , " +
     "LastName TEXT NOT NULL, Email TEXT NOT NULL , Password TEXT NOT NULL);";
  
-var scoreBoard = "create table if not exists scoreBoard ( Id INTEGER NOT NULL  , UserName TEXT NOT NULL ," +
-    " Rank INTEGER ,  Score INTEGER );";
+var scoreBoard = "create table if not exists scoreBoard ( Id INTEGER PRIMARY KEY AUTOINCREMENT , Email TEXT NOT NULL ," +
+    " Rank INTEGER ,  Score INTEGER , FOREIGN KEY ( Email ) REFERENCES signup ( Email );";
 
 
 db.serialize(function() {
@@ -35,8 +36,8 @@ db.serialize(function() {
             console.log("ScoreBoard Table is created");
     });
 
-    db.run("insert into user ( 'UserName' , 'Password') values(?,?)", "hussain@gmail.com" , "dastan");
-    console.log("1 Email Id is Inserted ");
+ //   db.run("insert into user ( 'UserName' , 'Password') values(?,?)", "hussain@gmail.com" , "dastan");
+  //  console.log("1 Email Id is Inserted ");
 });
 
 //db.close();

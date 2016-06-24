@@ -23,13 +23,6 @@ app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
 
-app.get('/home', function(req ,res ){
-  // db.get("Select UserName from user" );
-  console.log(req.body);
-    res.json({'user' : req.params.email , 'pass' : req.params.password}) ;
-});
-
-
 // public static file
 app.set('images' , path.join(__dirname , 'public', 'images'));
 app.set('javascripts' , path.join(__dirname , 'public' , 'javascripts'));
