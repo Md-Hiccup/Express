@@ -15,25 +15,19 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/login' , function(req ,res){
-    res.json("Login Page");
-   // console.log(req.body.Password);
 
     db.all("Select Email , Password from signup where Email = ? AND Password = ? " ,[req.body.Email , req.body.Password]
-        , function (err , rows) { console.log(rows.length) ;   //  console.log(rows[0].Email ;
+        , function (err , rows) {     console.log(rows.length) ;   //  console.log(rows[0].Email) ;
             rows.forEach(function (row) {
-          //  console.log(req.body.Email);
-          //  console.log(row.Email , row.Password) ;
-                if(req.body.Email == row.Email) {
+
+                if(rows.length != 0)       // (req.body.Email == row.Email)
+                {
                     console.log('True');
-                    res.set('Content-Type', 'text/plain');
-                    res.redirect('../public/html/index.html');
-                    //    res.redirect('./index');
-                //    res.setHeader('content-type', 'text/html');
                     res.sendFile(path.join(__dirname,'../','public','html','index.html'));
                 }
-                else {
-                    console.log('false');
-                    //  res.sendFile(path.join(__dirname,'../','public','html','home.html'));
+                else if(rows.length === 0) {
+                    console.log('False');
+                    res.sendFile(path.join(__dirname,'../','public','html','home.html'));
                 }
             });
      });
@@ -42,10 +36,17 @@ router.post('/login' , function(req ,res){
 
 
 router.post('/register' , function( req , res ){ 
-    res.json("Register Page");
+ //   res.json("Register Page");
     console.log(req.body);
     db.run("insert into signup ( FirstName , LastName , Email , Password ) values ( ? , ? , ? , ? )" ,
-        [ req.body.FirstName , req.body.LastName , req.body.Email , req.body.Password ]);
+        [ req.body.FirstName , req.body.LastName , req.body.Email , req.body.Password ] , function(err , row){
+            if(err){
+                res.json("Insertion Failed");
+            }
+            else {
+                 res.json("Successfully inserted");
+            }
+        });
 
     //db.run("update signup set Email = 'stark@mail.com'  where FirstName = 'tony' "  ) ;
     // db.run("delete from signup where FirstName = 'tony' ");
