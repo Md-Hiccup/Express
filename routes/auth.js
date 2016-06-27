@@ -18,15 +18,17 @@ router.post('/login' , function(req ,res){
     res.json("Login Page");
    // console.log(req.body.Password);
 
-    db.all("Select Email , Password from signup "
+    db.all("Select Email , Password from signup where Email = ? AND Password = ? " ,[req.body.Email , req.body.Password]
         , function (err , rows) { console.log(rows.length) ;   //  console.log(rows[0].Email ;
             rows.forEach(function (row) {
-           // console.log(req.body.Email);
-           // console.log(row.Email , row.Password) ;
+          //  console.log(req.body.Email);
+          //  console.log(row.Email , row.Password) ;
                 if(req.body.Email == row.Email) {
                     console.log('True');
-                    //  res.set('Content-Type', 'text/plain');
-                    res.setHeader('content-type', 'text/html');
+                    res.set('Content-Type', 'text/plain');
+                    res.redirect('../public/html/index.html');
+                    //    res.redirect('./index');
+                //    res.setHeader('content-type', 'text/html');
                     res.sendFile(path.join(__dirname,'../','public','html','index.html'));
                 }
                 else {
