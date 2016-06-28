@@ -4,46 +4,70 @@
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('hiccup.db');
 
-
+var flash = require('connect-flash');
 var path = require('path');
 var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('home', { message: req.flash('message') });
+    res.sendFile(path.join(__dirname,'../','public','html','home.html'));
 });
 
 router.post('/login' , function(req ,res){
-
-    db.all("Select Email , Password from signup where Email = ? AND Password = ? " ,[req.body.Email , req.body.Password]
+   // console.log(req.body.email);
+    db.all("Select Email , Password from signup where Email = ? AND Password = ? ",[ req.body.email ,req.body.password ]
         , function (err , rows) {     console.log(rows.length) ;   //  console.log(rows[0].Email) ;
             rows.forEach(function (row) {
-
+                
                 if(rows.length != 0)       // (req.body.Email == row.Email)
                 {
                     console.log('True');
                     res.sendFile(path.join(__dirname,'../','public','html','index.html'));
                 }
-                else if(rows.length === 0) {
+                else {
                     console.log('False');
-                    res.sendFile(path.join(__dirname,'../','public','html','home.html'));
+                  //  res.sendFile(path.join(__dirname,'../','public','html','home.html'));
                 }
             });
      });
-    
- });
+            /** session handling 
+        User.findOne({ email: req.body.email }, function(err, user) {
+            if (!user) {
+                res.sendFile(path.join(__dirname,'../','public','html','home.html'), options, function (err) {
+                    if (err) {
+                        console.log(err);
+                        res.status(err.status).end();
+                    }
+                });
+            } else {
+                if (req.body.password === user.password) {
+                    //  req.session.user = user;              // sets a cookie with the user's info
+                    res.redirect('../public/html/index.html');
+                } else {
+                    res.sendFile(path.join(__dirname,'../','public','html','home.html'), options, function (err) {
+                        if (err) {
+                            console.log(err);
+                            res.status(err.status).end();
+                        }
+                    });
+                }
+            }
+        });    **/
+ });            
 
 
 router.post('/register' , function( req , res ){ 
  //   res.json("Register Page");
-    console.log(req.body);
+    var data = false;
+    console.log(req.body.firstname);
     db.run("insert into signup ( FirstName , LastName , Email , Password ) values ( ? , ? , ? , ? )" ,
-        [ req.body.FirstName , req.body.LastName , req.body.Email , req.body.Password ] , function(err , row){
+        [ req.body.firstname , req.body.lastname , req.body.email , req.body.password ] , function(err , rows){
             if(err){
+                console.log('Failed'); 
                 res.json("Insertion Failed");
             }
-            else {
+            else {  console.log('successful'); data=true ;
                  res.json("Successfully inserted");
             }
         });

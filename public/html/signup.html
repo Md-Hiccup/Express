@@ -5,7 +5,8 @@
     <title>Hiccup's Life</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="../js/jquery-1.12.1.min.js"></script>
     <style>
         #brand-logo {
             height: 30px;
@@ -20,6 +21,31 @@
 
 
     </style>
+
+    <script>
+        $(document).ready(function(){
+            var fname , lname , email , pass;
+            $("#signup").click(function(){
+
+                fname=$("#firstname").val();
+                lname=$("#lastname").val();
+                email=$("#email").val();
+                pass=$("#password").val();
+
+                $.post("http://localhost:3000/auth/register",{firstname:fname,lastname:lname,email:email,password:pass}
+                     , function(data){  alert("hello");
+                            if(data === true) {
+                                location.href = "http://localhost:3000/index";
+                                // location.href = "http://www.google.com";
+                            }else {
+                                 location.href = "http://localhost:3000/register"
+                            }
+                 });
+            });
+        });
+    </script>
+
+
 </head>
 <body>
 
@@ -78,30 +104,30 @@
                     <div class="form-group ">
                         <!--      <label class="col-xs-2 control-label" for="inputSuccess">Firstname</label>
                             -->  <div class="col-xs-6">
-                        <input type="text" id=Firsname class="form-control" placeholder=" Firstname" required>
+                        <input type="text" id=firstname class="form-control" placeholder=" Firstname" required>
                     </div>
 
                         <div class="col-xs-6">
-                            <input type="text" id="Lastname" class="form-control" placeholder=" Lastname" required>
+                            <input type="text" id="lastname" class="form-control" placeholder=" Lastname" required>
                         </div>
                     </div>
                     <br>
                     <div class="form-group ">
                         <div class="col-xs-10">
-                            <input type="email" id="LEmail" class="form-control" placeholder=" Email Address" required>
+                            <input type="email" id="email" class="form-control" placeholder=" Email Address" required>
                         </div>
                     </div>
                     <br>
                     <div class="form-group ">
                         <div class="col-xs-10">
-                            <input type="password" id="LPassword" class="form-control" placeholder="Password" required>
+                            <input type="password" id="password" class="form-control" placeholder="Password" required>
                         </div>
                     </div>
                     <br>
                     <button type="submit" class="col-lg-4 btn btn-success btn-lg " id = "signup">SignUp</button>
                <br><br><hr>
 
-            <p>Already have an account? <a href="./home.html">Login</a></p>
+           <!-- <p>Already have an account? <a href="home.html">Login</a></p>  -->
            </form>
         </div>
 

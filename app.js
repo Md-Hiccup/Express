@@ -9,6 +9,8 @@ var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('hiccup.db');
 var flash = require('connect-flash');
 
+var session = require('express-session');
+
 var routes = require('./routes/index');
 var auth = require('./routes/auth');
 //var users = require('./routes/users');
@@ -42,6 +44,14 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(session({
+  cookieName: 'session',
+  resave : true ,
+  saveUninitialized: true,
+  secret: 'express-session',
+  duration: 30 * 60 * 1000,
+  activeDuration: 5 * 60 * 1000
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);

@@ -1,0 +1,39 @@
+{
+  "user1" : {
+    "FirstName" : "johnny",
+    "LastName" : "depp",
+    "Email" : "johnny@mail.com",
+    "Password" : "depp@123"
+  },
+  "user2" : {
+    "FirstName":"jack",
+    "LastName" : "sparrow",
+    "Email" : "jack@mail.com" ,
+    "Password" : "jack@321"
+   },
+
+  "user3" : {
+    "FirstName":"tony",
+    "LastName" : "stark",
+    "Email" : "tony@mail.com" ,
+    "Password" : "stark@iron"
+  },
+  "user4" : {
+    "FirstName":"will",
+    "LastName" : "Tunnel",
+    "Email" : "willTunnel@mail.com" ,
+    "Password" : "tunnel@321"
+  },
+  "user5" : {
+    "FirstName":"paul",
+    "LastName" : "walker",
+    "Email" : "paulWalker@mail.com" ,
+    "Password" : "paul@123"
+  },
+  "user6" : {
+    "FirstName":"vin",
+    "LastName" : "diesel",
+    "Email" : "vinDiesel@mail.com" ,
+    "Password" : "vin@123"
+  }
+}

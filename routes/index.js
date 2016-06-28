@@ -10,8 +10,17 @@ router.get('/', function(req, res, next) {
 });
 */
 router.get('/' , function (req ,res ){
-//    res.render("index");
+ //	   res.render("index");
 	res.sendFile(path.join(__dirname,'../','public','html','home.html'));
 });
+router.get('/register' , function (req ,res ){
+   // res.render("signup");
+	res.sendFile(path.join(__dirname,'../','public','html','signup.html'));
+});
+
+router.get('/index' , function(req ,res ){
+	res.sendFile(path.join(__dirname,'../','public','html','index.html'))
+});
+
 
 module.exports = router;
