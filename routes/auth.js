@@ -4,11 +4,12 @@
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('hiccup.db');
 
+var session = require('express-session');
 var flash = require('connect-flash');
 var path = require('path');
 var express = require('express');
 var router = express.Router();
-
+var sess ; 
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.sendFile(path.join(__dirname,'../','public','html','home.html'));
@@ -31,30 +32,12 @@ router.post('/login' , function(req ,res){
                 }
             });
      });
-            /** session handling 
-        User.findOne({ email: req.body.email }, function(err, user) {
-            if (!user) {
-                res.sendFile(path.join(__dirname,'../','public','html','home.html'), options, function (err) {
-                    if (err) {
-                        console.log(err);
-                        res.status(err.status).end();
-                    }
-                });
-            } else {
-                if (req.body.password === user.password) {
-                    //  req.session.user = user;              // sets a cookie with the user's info
-                    res.redirect('../public/html/index.html');
-                } else {
-                    res.sendFile(path.join(__dirname,'../','public','html','home.html'), options, function (err) {
-                        if (err) {
-                            console.log(err);
-                            res.status(err.status).end();
-                        }
-                    });
-                }
-            }
-        });    **/
+    sess = req.session;
+    sess.email = req.body.email ;
+    res.end('done');
  });            
+
+
 
 
 router.post('/register' , function( req , res ){ 
