@@ -5,7 +5,7 @@ var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('hiccup.db');
 
 var session = require('express-session');
-var flash = require('connect-flash');
+//var flash = require('connect-flash');
 var path = require('path');
 var express = require('express');
 var router = express.Router();
@@ -19,22 +19,31 @@ router.post('/login' , function(req ,res){
    // console.log(req.body.email);
     db.all("Select Email , Password from signup where Email = ? AND Password = ? ",[ req.body.email ,req.body.password ]
         , function (err , rows) {     console.log(rows.length) ;   //  console.log(rows[0].Email) ;
-            rows.forEach(function (row) {
-                
-                if(rows.length != 0)       // (req.body.Email == row.Email)
-                {
-                    console.log('True');
-                    res.sendFile(path.join(__dirname,'../','public','html','index.html'));
-                }
-                else {
-                    console.log('False');
-                  //  res.sendFile(path.join(__dirname,'../','public','html','home.html'));
-                }
-            });
-     });
+            if( err )
+            {
+                console.log(err);
+            }
+            else {
+                rows.forEach(function (row) {
+
+                    if (rows.length != 0)       // (req.body.Email == row.Email)
+                    {
+                        console.log('True');
+                        res.end('done');
+                       // res.sendFile(path.join(__dirname, '../', 'public', 'html', 'index.html'));
+                    }
+                    else {
+                        console.log('False');
+                        //  res.sendFile(path.join(__dirname,'../','public','html','home.html'));
+                    }
+                });
+            }
+         });
+       
     sess = req.session;
-    sess.email = req.body.email ;
-    res.end('done');
+    sess.email=req.body.email;
+   // res.end=('done');
+    
  });            
 
 

@@ -29,13 +29,13 @@ router.get('/' , function (req ,res ){
 });
 
 router.get('/logout' , function(req ,res ) {
-	res.sendFile(path.join(__dirname, '../', 'public', 'html', 'home.html'));
-	req.session.destroy(function (err) {
-		if (err) {
-			console.log(err);
-		} else {
-			res.redirect('/');
-		}
+	req.session.destroy(function (err) {  
+		if (err) { 
+			console.log(err); 
+		} else { 
+			res.end('done');
+			//res.sendFile(path.join(__dirname, '../', 'public', 'html', 'home.html'));
+		} 
 	});
 });
 

@@ -22,20 +22,7 @@
 
     </style>
 
-    <script>
-        $(document).ready(function(){
-            var email,pass;
-            $("#login").click(function(){
-                email=$("#email").val();
-                pass=$("#password").val();
-
-                $.post("http://localhost:3000/auth/login",{email:email,password:pass},function(data){
-                        location.href = "http://localhost:3000/index";
-                       // location.href = "http://www.google.com";
-                });
-            });
-        });
-    </script>
+    <script src="../js/login.js"></script>
 
 </head>
 <body>
@@ -143,7 +130,7 @@
                         <button type="submit" class="col-lg-4 btn btn-warning btn-lg " id ="login">Login</button>
                         <br><br><hr>
 
-                      <!--  <p>Need an account? <a href="signup.html">Signup</a></p>
+                      <p>Need an account? <a href="#" id = "signup" >Signup</a></p>
                        <!-- <p>Or go <a href="/">home</a>.</p>
                             -->
                     </form>

@@ -31,7 +31,7 @@
                 lname=$("#lastname").val();
                 email=$("#email").val();
                 pass=$("#password").val();
-
+                if(fname != null){
                 $.post("http://localhost:3000/auth/register",{firstname:fname,lastname:lname,email:email,password:pass}
                      , function(data){  alert("hello");
                             if(data === true) {
@@ -40,7 +40,15 @@
                             }else {
                                  location.href = "http://localhost:3000/register"
                             }
-                 });
+                   });
+                }
+            });
+            $("#login").click(function(){
+
+                $.get("http://localhost:3000/home" ,  function(data){
+                    location.href = "http://localhost:3000/home";
+                    // location.href = "http://www.google.com";
+                });
             });
         });
     </script>
@@ -127,7 +135,7 @@
                     <button type="submit" class="col-lg-4 btn btn-success btn-lg " id = "signup">SignUp</button>
                <br><br><hr>
 
-           <!-- <p>Already have an account? <a href="home.html">Login</a></p>  -->
+              <p>Already have an account? <a href="#" id="login">Login</a></p>
            </form>
         </div>
 

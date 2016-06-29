@@ -14,6 +14,8 @@ var signup = "create table if not exists signup ( Id INTEGER PRIMARY KEY AUTOINC
 var scoreBoard = "create table if not exists scoreBoard ( Id INTEGER PRIMARY KEY AUTOINCREMENT , Email TEXT NOT NULL ," +
     " Rank INTEGER ,  Score INTEGER , FOREIGN KEY ( Email ) REFERENCES signup ( Email );";
 
+var session = "create temp table if not exists session ( Id INTEGER PRIMARY KEY AUTOINCREMENT , Email TEXT NOT NULL ," +
+    "Login REAL , Logout REAL , Data REAL ;)";
 
 db.serialize(function() {
     console.log(db);
