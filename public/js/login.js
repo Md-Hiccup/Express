@@ -6,28 +6,34 @@ $(document).ready(function(){
     $("#login").click(function(){
         email=$("#email").val();
         pass=$("#password").val();
+        alert("Lion king");
         if(email !== "" && pass !== "" ){
-           $.post("http://localhost:3000/auth/login",{email:email,password:pass},function(data){
-               if(data == 'done') {
-                   alert('Email password is verified');
-                     var url = "http://www.google.com" ;
-                     $(location).attr('href',url);
-                   //location.href = "http://localhost:3000/register";
-                 //   window.location.href = "http://www.google.com";
-               }
-           }); 
-        } else {
-            
-            $.get("http://localhost:3000/",function(data){
-                alert('enter values');
-                location.href = "http://localhost:3000/";
+           $.post("/auth/login",
+               {
+                   email : email,
+                   password :pass  },
+                 function(data){
+                     if(data === 'done') {
+                         url = "/register";
+                         window.location.replace("http://www.google.com");
+                         alert('Email & password is verified ');
+                         //$(location).attr('href',"http://www.google.com");
+                         //window.location.href = url;
+                         setTimeout(document.location = "/register", 3000);
+                         alert(document.location);
+                     }
+                  }); 
+           } else {            
+            $.get("/login",function(data){
+                alert('Enter values');
+                location.href = "/login";
            });
         }
     });
-    $("#signup").click(function(){
+    $("#register").click(function(){
 
-        $.get("http://localhost:3000/register" ,  function(data){
-            location.href = "http://localhost:3000/register";
+        $.get("/register" ,  function(data){
+            location.href = "/register";
             // location.href = "http://www.google.com";
         });
     });

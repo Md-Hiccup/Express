@@ -25,7 +25,7 @@ app.use(passport.session());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 
 
 app.listen(3000, function () {
@@ -49,8 +49,8 @@ app.use(session({
   resave : true ,
   saveUninitialized: true,
   secret: 'express-session',
-  duration: 30 * 60 * 1000,
-  activeDuration: 5 * 60 * 1000
+ // duration: 30 * 60 * 1000,
+ // activeDuration: 5 * 60 * 1000
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 

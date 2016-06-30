@@ -4,11 +4,11 @@
 $(document).ready(function() {
     $("#logout").click(function () {
 
-        $.get("http://localhost:3000/logout", function (data) {
+        $.get("/logout", function (data) {
             if (data == 'done') {
-            //    alert('location');
-                location.href = "http://localhost:3000/";
-               //  location.href = "http://www.google.com";
+               // alert('data '+data);
+                 location.href = "/index";
+                // location.href = "http://www.google.com";
             }
         });
     });
