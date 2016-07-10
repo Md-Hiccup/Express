@@ -20,28 +20,26 @@ router.post('/login' , function(req ,res){
    // sess = req.session;
    // sess.email=req.body.email;
     // res.end('done');
-    alert("authe");
-   //  console.log("Authentication "+req.sess.email);
+    console.log("Authentication ");
     db.all("Select Email , Password from signup where Email = ? AND Password = ? ",[ req.body.email ,req.body.password ]
-        , function (err , rows) {     console.log(rows.length) ;   //  console.log(rows[0].Email) ;
+        , function (err , rows) {     
+        console.log(rows.length) ;   //  console.log(rows[0].Email) ;
             if( err )
             {
                 console.log(err);
+                res.json({"status" : err.status , "data" : err.message});
             }
             else {
-                rows.forEach(function (row) {
-
-                    if (rows.length !== 0)       // (req.body.Email == row.Email)
+                    if (rows.length == 1)       // (req.body.Email == row.Email)
                     {
-                        console.log('True');
-                        res.send('done');
+                        res.json({"status" : "200" , "data" : "Login successful"});
                        // res.sendFile(path.join(__dirname, '../', 'public', 'html', 'index.html'));
                     }
                     else {
-                        console.log('False');
+                        res.json({"status" : "500" , "data" : "Login failed"});
                         //  res.sendFile(path.join(__dirname,'../','public','html','home.html'));
                     }
-                });
+                
             }
          });
 
@@ -56,17 +54,17 @@ router.post('/register' , function( req , res ){
     db.run("insert into signup ( FirstName , LastName , Email , Password ) values ( ? , ? , ? , ? )" ,
         [ req.body.firstname , req.body.lastname , req.body.email , req.body.password ] , function(err , rows){
             if(err){
-                console.log('Failed'); 
-                //res.json("Insertion Failed");
+                console.log('Failed ' + err); 
+                res.json({"status" : "500" , "data" : "Insertion Failed"});
             }
             else {  
                 console.log('successful');
-                res.end('done') ;
-                // res.json("Successfully inserted");
+                //res.end('done') ;
+                 res.json({"status" : "200" , "data" : "Successfully inserted"});
             }
         });
-    sess = req.session;
-    sess.email=req.body.email;
+   // sess = req.session;
+   // sess.email=req.body.email;
     
     //db.run("update signup set Email = 'stark@mail.com'  where FirstName = 'tony' "  ) ;
     // db.run("delete from signup where FirstName = 'tony' ");

@@ -9,7 +9,9 @@ $(document).ready(function(){
         lname=$("#lastname").val();
         email=$("#email").val();
         pass=$("#password").val();
+       // console.log(fname );
         if(fname !== "" && lname !== "" && email !== "" && pass !== ""){
+            console.log("helloooo");
             $.post("/auth/register",
                 {   
                     firstname:fname , 
@@ -18,9 +20,11 @@ $(document).ready(function(){
                     password:pass
                 },
                 function(data){  
-                    if(data == 'done') {
-                        alert("your email is registered");
-                        location.href = "/login";
+                    console.log(data);
+                    if(data.status == '200') {
+                        console.log("Email is registered");
+                     //   alert("your email is registered");
+                        window.location.href = "/";
                        // location.href = "http://www.google.com";
                     }
                 });
@@ -30,6 +34,7 @@ $(document).ready(function(){
             });
         }*/
     });
+
     $("#login").click(function(){
 
         $.get("/login" ,  function(data){
